@@ -25,7 +25,7 @@
 
     ```bash
     dotnet restore
-    dotnet run
+    dotnet run --urls=http://localhost:5001/
     ```
 
 3. **Access Swagger UI:**
