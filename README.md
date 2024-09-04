@@ -16,7 +16,7 @@
 1. **Sklonuj repozytorium:**
 
     ```bash
-    git clone https://github.com/yourusername/AuthJWTAPI.git
+    git clone git@github.com:jklebucki/AuthJWTAPI.git
     cd AuthJWTAPI
     ```
 
