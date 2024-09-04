@@ -30,20 +30,20 @@
 
 3. **Access Swagger UI:**
 
-    After starting the application, Swagger UI documentation will be available at `https://localhost:5001/swagger`.
+    After starting the application, Swagger UI documentation will be available at `http://localhost:5001/swagger`.
 
 ## Example Requests
 
 - **User login:**
 
     ```bash
-    curl -X POST https://localhost:5001/api/auth/signin -H "Content-Type: application/json" -d "{\"username\":\"testuser\", \"password\":\"password123\"}"
+    curl -X POST http://localhost:5001/api/auth/signin -H "Content-Type: application/json" -d "{\"username\":\"testuser\", \"password\":\"password123\"}"
     ```
 
 - **Change password:**
 
     ```bash
-    curl -X POST https://localhost:5001/api/auth/changepassword -H "Authorization: Bearer {token}" -H "Content-Type: application/json" -d "{\"newPassword\":\"newpassword123\"}"
+    curl -X POST http://localhost:5001/api/auth/changepassword -H "Authorization: Bearer {token}" -H "Content-Type: application/json" -d "{\"newPassword\":\"newpassword123\"}"
     ```
 
 ## Additional Information
