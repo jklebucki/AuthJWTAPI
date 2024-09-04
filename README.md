@@ -1,4 +1,5 @@
 # AuthJWTAPI
+![.NET Core](https://img.shields.io/badge/.NET%20Core-8.0-blue) ![Version](https://img.shields.io/badge/version-1.0.0-green)
 
 **AuthJWTAPI** to narzędzie deweloperskie stworzone w .NET Core 8 do testowania aplikacji klienckich wymagających autoryzacji przy użyciu JSON Web Tokens (JWT).
 
