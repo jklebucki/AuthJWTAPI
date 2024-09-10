@@ -2,7 +2,6 @@
 using AuthJWTAPI.Models.DTOs;
 using AuthJWTAPI.Repositories;
 using AutoMapper;
-using System.Collections.Generic;
 
 namespace AuthJWTAPI.Services
 {

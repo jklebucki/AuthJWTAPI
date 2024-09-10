@@ -1,5 +1,4 @@
 ﻿using AuthJWTAPI.Models.DTOs;
-using System.Collections.Generic;
 
 namespace AuthJWTAPI.Services
 {

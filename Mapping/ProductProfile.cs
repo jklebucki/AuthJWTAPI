@@ -1,5 +1,5 @@
-﻿using AuthJWTAPI.Models.DTOs;
-using AuthJWTAPI.Models;
+﻿using AuthJWTAPI.Models;
+using AuthJWTAPI.Models.DTOs;
 using AutoMapper;
 
 namespace AuthJWTAPI.Mapping

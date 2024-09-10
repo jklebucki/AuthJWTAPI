@@ -1,7 +1,6 @@
 ﻿using AuthJWTAPI.Models.DTOs;
 using AuthJWTAPI.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
 namespace AuthJWTAPI.Controllers
 {
