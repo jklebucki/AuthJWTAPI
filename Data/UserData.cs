@@ -1,4 +1,3 @@
-using System;
 using AuthJWTAPI.Models;
 
 namespace AuthJWTAPI.Data

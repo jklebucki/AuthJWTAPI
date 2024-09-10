@@ -1,5 +1,3 @@
-using System;
-
 namespace AuthJWTAPI.Commands
 {
     public class RegisterCommand

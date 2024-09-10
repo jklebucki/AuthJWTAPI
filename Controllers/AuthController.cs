@@ -1,13 +1,12 @@
-using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 using AuthJWTAPI.Commands;
 using AuthJWTAPI.Data;
 using AuthJWTAPI.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace AuthJWTAPI.Controllers
 {
@@ -29,7 +28,7 @@ namespace AuthJWTAPI.Controllers
             {
                 return BadRequest("User already exists");
             }
-            
+
             var user = new User
             {
                 Id = Guid.NewGuid().ToString(),
