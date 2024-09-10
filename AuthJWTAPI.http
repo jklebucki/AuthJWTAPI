@@ -1,6 +1,6 @@
 @AuthJWTAPI_HostAddress = http://localhost:5298
 
-GET {{AuthJWTAPI_HostAddress}}/weatherforecast/
+GET {{AuthJWTAPI_HostAddress}}/swagger
 Accept: application/json
 
 ###

@@ -1,8 +1,14 @@
+using AuthJWTAPI.Repositories;
+using AuthJWTAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddCors(options =>
 {
@@ -18,7 +24,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]!);
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
