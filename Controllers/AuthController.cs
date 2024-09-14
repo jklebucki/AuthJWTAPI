@@ -54,7 +54,7 @@ namespace AuthJWTAPI.Controllers
             }
 
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]);
+            var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]!);
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
@@ -74,7 +74,7 @@ namespace AuthJWTAPI.Controllers
 
         [Authorize]
         [HttpPost("signout")]
-        public IActionResult SignOut()
+        public IActionResult SignOutApi()
         {
             // Implementacja wylogowania użytkownika
             return Ok();
@@ -84,7 +84,7 @@ namespace AuthJWTAPI.Controllers
         [HttpPost("changepassword")]
         public IActionResult ChangePassword(string newPassword)
         {
-            var username = User.Identity.Name;
+            var username = User.Identity!.Name;
             var user = UserData.Users.SingleOrDefault(u => u.Username == username);
 
             if (user == null)
